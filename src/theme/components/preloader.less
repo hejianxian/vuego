@@ -1,0 +1,37 @@
+/* === Preloader === */
+.v-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: @modal-zIndex;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-preloader__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .7);
+  z-index: 13500;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  .v-preloader__spinner {
+    display: block;
+    width: 34px;
+    height: 34px;
+    &~span{
+      padding: 4px 4px 0 4px;
+    }
+  }
+}

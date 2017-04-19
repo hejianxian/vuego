@@ -1,0 +1,103 @@
+/* === Action Sheet === */
+@actionsModalBg: rgba(255,255,255,0.95);
+@actionsModalButtonActiveBg: rgba(230,230,230,0.9);
+@actionsModalHairlineColor: rgba(0,0,0,0.2);
+@actionsModalDuration: 200ms;
+@acitonsModalHeight: 54px;
+
+.v-action-sheet {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: @modal-zIndex;
+  background: @modal-overlay-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-action-sheet__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 13500;
+  width: 100%;
+}
+.v-action-sheet__group {
+  margin: 8px;
+  position: relative;
+  border-radius: 13px;
+  overflow: hidden;
+  .transform(translate3d(0,0,0));
+}
+.v-action-sheet__button, .v-action-sheet__label {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+  background: @actionsModalBg;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  .border(bottom, @actionsModalHairlineColor);
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  b {
+    font-weight: 500;
+  }
+  &.v-action-sheet__button--bold {
+    font-weight: 500;
+  }
+  &.v-action-sheet__button--red {
+    color: @red;
+  }
+  &:first-child {
+    border-radius: 13px 13px 0 0;
+  }
+  &:last-child {
+    .border-remove(bottom);
+    border-radius: 0 0 13px 13px;
+  }
+  &:first-child:last-child {
+    border-radius: 13px;
+  }
+  &.disabled {
+    opacity: 0.9;
+    color:@gray;
+  }
+}
+.v-action-sheet__button {
+  cursor: pointer;
+  height: @acitonsModalHeight;
+  line-height: @acitonsModalHeight;
+  font-size: 20px;
+  color: @default-color;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+.v-action-sheet__label {
+  font-size: 13px;
+  line-height: 1.3;
+  min-height: @acitonsModalHeight;
+  padding: 8px 10px;
+  color: #8a8a8a;
+  .flexbox();
+  .justify-content(center);
+  .align-items(center);
+}
+
+@media (orientation:landscape) {
+  .v-action-sheet__label {
+    min-height: 44px;
+  }
+  .v-action-sheet__button {
+    height: 44px;
+    line-height: 44px;
+  }
+}

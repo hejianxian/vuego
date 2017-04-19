@@ -1,0 +1,50 @@
+/* === Toast === */
+.v-toast {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: @modal-zIndex;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-toast__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 12px 20px;
+  max-width: 220px;
+  line-height: 24px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 13500;
+  border-radius: 5px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  &.top-toast{
+    top: 80px;
+    transform: translate(-50%, 0);
+  }
+  &.bottom-toast{
+    top: auto;
+    bottom: 80px;
+    transform: translate(-50%, 0);
+  }
+  i.icon{
+    flex: 1;
+    line-height: 60px;
+    padding-top: 5px;
+    font-size: 50px;
+    color: #fff;
+    display: none;
+  }
+  span{
+    flex: 1;
+  }
+}

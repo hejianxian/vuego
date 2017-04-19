@@ -1,0 +1,121 @@
+/* === v-button === */
+
+.v-button {
+  background: @button-default;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0 10px;
+  margin: 0;
+  height: 29px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 28px;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border: none;
+  &.v-button--round {
+    border-radius: 28px;
+  }
+  &.v-button--outline {
+    border: 1px solid @button-default;
+    background: none;
+    color: @button-default;
+  }
+  &.v-button--large {
+    font-size: 17px;
+    height: 44px;
+    line-height: 42px;
+  }
+  &.v-button--small{
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+  }
+  &.v-button--fill {
+    color:#fff;
+    background: @button-default;
+    border: none;
+  }
+  // colors button
+  &.primary {
+    background: @button-primary;
+    &.v-button--outline {
+      border: 1px solid @button-primary;
+      background: none;
+      color: @button-primary;
+    }
+  }
+  &.success {
+    background: @button-success;
+    &.v-button--outline {
+      border: 1px solid @button-success;
+      background: none;
+      color: @button-success;
+    }
+  }
+  &.info {
+    background: @button-info;
+    &.v-button--outline {
+      border: 1px solid @button-info;
+      background: none;
+      color: @button-info;
+    }
+  }
+  &.warning {
+    background: @button-warning;
+    &.v-button--outline {
+      border: 1px solid @button-warning;
+      background: none;
+      color: @button-warning;
+    }
+  }
+  &.danger {
+    background: @button-danger;
+    &.v-button--outline {
+      border: 1px solid @button-danger;
+      background: none;
+      color: @button-danger;
+    }
+  }
+}
+
+.v-buttons-row {
+  .align-self(center);
+  .flexbox();
+  .flex-wrap(nowrap);
+  .v-button {
+    border-radius: 0 0 0 0;
+    border-left-width: 0;
+    width: 100%;
+    -webkit-box-flex:1;
+    -ms-flex:1;
+  }
+  .v-button:first-child {
+    border-radius: 5px 0 0 5px;
+    border-left-width: 1px;
+    border-left-style: solid;
+  }
+  .v-button:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  .v-button:first-child:last-child {
+    border-radius: 5px;
+  }
+  .v-button.v-button--round:first-child {
+    border-radius: 27px 0 0 27px;
+  }
+  .v-button.v-button--round:last-child {
+    border-radius: 0 27px 27px 0;
+  }
+}

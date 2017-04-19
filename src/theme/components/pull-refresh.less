@@ -1,0 +1,38 @@
+/* === pull-refresh === */
+.v-pull-refresh__content{
+  position: relative;
+}
+
+.v-pull-refresh__layer {
+  width: 100%;
+  height: 44px;
+  margin-top: -44px;
+  position: relative;
+  left: 0;
+  top: 0;
+  line-height: 44px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+.loader {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+/**
+* refreshing
+*/
+.v-pull-refresh__content.refreshing {
+  transform: translate3d(0, 44px, 0);
+  transition-duration: 300ms;
+}
+
+/**
+* refreshdone
+*/
+.v-pull-refresh__content.refreshdone{
+    transform: translate3d(0, 0, 0);
+    transition-duration: 300ms;
+}

@@ -1,0 +1,41 @@
+// Checkboxes
+.v-item__checkbox {
+  cursor: pointer;
+  i.icon-form-checkbox {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    border-radius: 22px;
+    border: 1px solid #c7c7cc;
+    box-sizing: border-box;
+    &:after {
+      content:' ';
+      position: absolute;
+      left: 50%;
+      margin-left: -6px;
+      top: 50%;
+      margin-top: -4px;
+      width: 12px;
+      height: 9px;
+    }
+  }
+  input[type="checkbox"], input[type="radio"] {
+    display: none;
+    &:checked + .v-item__media{
+      i.icon-form-checkbox {
+          border: none;
+          background-color: @default-color;
+      }
+      i.icon-form-checkbox:after {
+        background: no-repeat center;
+        background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 12 9' xml:space='preserve'><polygon fill='#ffffff' points='12,0.7 11.3,0 3.9,7.4 0.7,4.2 0,4.9 3.9,8.8 3.9,8.8 3.9,8.8 '/></svg>");
+        -webkit-background-size: 12px 9px;
+        background-size: 12px 9px;
+      }
+    }
+    ~ .v-item__inner {
+      padding-right: 15px;
+      background-image: none;
+    }
+  }
+}

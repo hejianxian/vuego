@@ -1,0 +1,35 @@
+// modal default transition
+.v-modal-enter-active,
+.v-modal-leave-active {
+  .transition(@modal-duration);
+  .transform(translate3d(0, 0, 0) scale(1));
+}
+
+.v-modal-enter,
+.v-modal-leave-active {
+  opacity: 0;
+  .transform(translate3d(0, 0, 0) scale(1.185));
+}
+
+.v-modal-leave-active{
+  .transform(translate3d(0, 0, 0) scale(1));
+}
+
+// action sheet default transition
+.v-action-sheet-enter-active,
+.v-action-sheet-leave-active {
+  .transition(@actionsModalDuration);
+  .v-action-sheet__content {
+    .transition(@actionsModalDuration);
+    .transform(translate3d(0, 0, 0));
+  }
+}
+
+.v-action-sheet-enter,
+.v-action-sheet-leave-active {
+  opacity: 0;
+  .v-action-sheet__content {
+    .transform(translate3d(0, 100%, 0));
+
+  }
+}

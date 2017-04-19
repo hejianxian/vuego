@@ -1,0 +1,80 @@
+/* === Slider === */
+.v-slider {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  .v-slider__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+    .v-slider__warp {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 300%;
+      height: 100%;
+    }
+    .v-slider__item {
+      width: 375px;
+      height: 100%;
+      float: left;
+    }
+  }
+  .v-slider__arrow {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    margin-top: -20px;
+    &.arrow-left {
+      left: 10px;
+    }
+    &.arrow-right {
+      right: 10px;
+    }
+    &.arrow-left:before {
+      content: '<';
+      width: 40px;
+      height: 40px;
+      display: block;
+      line-height: 38px;
+      text-align: center;
+    }
+    &.arrow-right:before {
+      content: '>';
+      width: 40px;
+      height: 40px;
+      display: block;
+      line-height: 38px;
+      text-align: center;
+    }
+  }
+  .v-slider__dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: #ddd;
+      margin: 0 2px;
+      &.active-dot {
+        background: blue;
+      }
+    }
+  }
+}

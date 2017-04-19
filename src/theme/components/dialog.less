@@ -1,0 +1,107 @@
+/* === dialog === */
+
+.v-dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: @modal-zIndex;
+  background: @modal-overlay-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-modal {
+  width: 270px;
+  text-align: center;
+  border-radius: 13px;
+  overflow: hidden;
+  color:#000;
+}
+.v-modal-inner {
+  padding: 15px;
+  border-radius: 13px 13px 0 0;
+  position: relative;
+  background: @modal-background;
+  .border(bottom, @modal-border-color);
+}
+.v-modal-title {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  +.v-modal-text {
+    margin-top: 5px;
+  }
+}
+.v-modal-buttons {
+  height: 44px;
+  position: relative;
+  .flexbox();
+  .justify-content(center);
+}
+.v-modal-button {
+  width: 100%;
+  padding: 0 5px;
+  height: 44px;
+  font-size: 17px;
+  line-height: 44px;
+  text-align: center;
+  color: @modal-button-color;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  flex: 1;
+  -webkit-box-flex:1;
+  -ms-flex:1;
+  background: @modal-background;
+  .border(right, @modal-border-color);
+  &:first-child {
+    border-radius: 0 0 0 13px;
+  }
+  &:last-child {
+    .border-remove(right);
+    border-radius: 0 0 13px 0;
+  }
+  &:first-child:last-child {
+    border-radius: 0 0 13px 13px;
+  }
+}
+
+// Prompt
+input.v-modal-text-input {
+  box-sizing: border-box;
+  height: 30px;
+  background: #fff;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  display: block;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  -webkit-appearance: none;
+  appearance: none;
+  + input.v-modal-text-input {
+    margin-top: 5px;
+  }
+}
+
+.v-modal-input-double {
+  input.v-modal-text-input {
+  }
+  .v-modal-input-double + & {
+    input.v-modal-text-input {
+      border-top: 0;
+      margin-top: 0;
+    }
+  }
+}

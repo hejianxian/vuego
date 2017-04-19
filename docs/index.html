@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vuego - Mobile UI components with Vue.js 2.0</title>
+  <meta name="description" content="Mobile UI components with Vue.js 2.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
+  <style>
+    .sidebar {
+      width: 240px;
+    }
+    .content {
+      left: 280px;
+    }
+    .markdown-section {
+      margin: 0;
+      max-width: 100%;
+      padding-right: 380px;
+    }
+    .markdown-section iframe {
+      margin: 0;
+    }
+    .phone{
+      width: 300px;
+      height: 100%;
+      background-color: transparent;
+      background-image: url('./_media/phone.png');
+      background-size: 100%;
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      position: fixed;
+      top: 0;
+      right: 40px;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .phone-inner{
+      width: 310px;
+      height: 540px;
+      margin-top: -10px;
+      background-color: #fafafa;
+      border: 1px solid #ccc;
+      transform-origin: center;
+      transform: scale(0.8, 0.8);
+    }
+    .phone-inner__iframe{
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+</body>
+<script src="//unpkg.com/vue"></script>
+<script src="//unpkg.com/vuep"></script>
+<script>
+
+</script>
+<script>
+  // Create preview component
+  var base_path = 'http://localhost:8088/';
+  Vue.component('v-phone', {
+    template: `<div v-if="iframeSrc" class="phone">
+                <div class="phone-inner">
+                  <iframe class="phone-inner__iframe" scrolling="no" :src="iframeSrc"></iframe>
+                </div>
+              </div>`,
+    props: [ 'hash' ],
+    data() {
+      return {
+        iframeSrc: base_path + this.hash
+      }
+    }
+  });
+
+  // Docsify config
+  window.$docsify = {
+    repo: 'hejianxian/vuego',
+    name: 'Vuego',
+    coverpage: true,
+    loadSidebar: true,
+    themeColor: '#319CF9',
+    search: 'auto'
+  }
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+</html>
