@@ -27,3 +27,10 @@ Some info.
 ```
 <v-phone hash="button"></v-phone>
 
+### Attributes
+
+|参数|说明|类型|可选值|默认值|
+|----|----|----|----|----|
+|size| 按钮尺寸| string | large, small| - |
+
+

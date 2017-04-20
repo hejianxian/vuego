@@ -48,6 +48,9 @@
         </v-row>
       </div>
       <div class="content-block">
+        <v-button large class="v-button--fill">fill button</v-button>
+      </div>
+      <div class="content-block">
         <v-buttons-row>
           <v-button outline>button</v-button>
           <v-button>button</v-button>
