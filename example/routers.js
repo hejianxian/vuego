@@ -8,10 +8,11 @@ import PullRefresh from './views/vue/pull-refresh';
 import InfiniteScroll from './views/vue/infinite-scroll';
 import Autocomplete from './views/vue/autocomplete';
 
+import Layout from './views/css/layout';
+import Colors from './views/css/colors';
 import Button from './views/css/button';
 import Grid from './views/css/grid';
 import List from './views/css/list';
-import Colors from './views/css/colors';
 
 import Dialog from './views/js/dialog';
 import ActionSheet from './views/js/action-sheet';
@@ -38,6 +39,7 @@ export default {
     { path: '/button', component: Button },
     { path: '/list', component: List },
     { path: '/colors', component: Colors },
+    { path: '/layout', component: Layout },
     { path: '/dialog', component: Dialog },
     { path: '/action-sheet', component: ActionSheet },
     { path: '/toast', component: Toast },

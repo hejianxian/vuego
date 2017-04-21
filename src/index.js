@@ -1,7 +1,12 @@
 import './theme/vuego.less';
 
 // css components
-import El from './components/css/base/el';
+import Page from './components/css/base/page';
+import Content from './components/css/base/content';
+import ContentBlock from './components/css/base/content-block';
+import BlockTitle from './components/css/base/block-title';
+import Header from './components/css/base/header';
+import Footer from './components/css/base/footer';
 
 import List from './components/css/list/list';
 import Item from './components/css/list/item';
@@ -43,7 +48,13 @@ export default {
     initDPR();
 
     // css
-    Vue.component(El.name, El);
+    Vue.component(Page.name, Page);
+    Vue.component(Content.name, Content);
+    Vue.component(ContentBlock.name, ContentBlock);
+    Vue.component(BlockTitle.name, BlockTitle);
+    Vue.component(Header.name, Header);
+    Vue.component(Footer.name, Footer);
+
     Vue.component(List.name, List);
     Vue.component(Item.name, Item);
     Vue.component(ItemMedia.name, ItemMedia);

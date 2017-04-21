@@ -1,6 +1,7 @@
 export default {
   // css
   'css components': {
+    Layout: '/layout',
     Colors: '/colors',
     Grid: '/grid',
     Button: '/button',

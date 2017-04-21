@@ -4,6 +4,7 @@
 
 - Components
   - Css
+    - [Layout](css-comps/layout)
     - [Buttons](css-comps/buttons)
     - [Grid](css-comps/grid)
     - [List](css-comps/list)
