@@ -13,7 +13,6 @@ export default {
     small: Boolean,
     round: Boolean,
     outline: Boolean,
-    disabled: Boolean,
   },
   computed: {
     btnSize() {
