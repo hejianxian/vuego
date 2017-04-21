@@ -1,4 +1,7 @@
 /* === Page/Content/blockTitle/Header/Footer  === */
+@headerHeight: 44px;
+@footerHeight: 44px;
+
 .v-page {
   width: 100%;
   height: 100%;
@@ -6,12 +9,12 @@
   overflow: hidden;
   &.v-page--has-header {
     &> .v-content {
-      padding-top: 44px;
+      padding-top: @headerHeight;
     }
   }
   &.v-page--has-footer {
     &> .v-content {
-      padding-bottom: 44px;
+      padding-bottom: @footerHeight;
     }
   }
 }
@@ -61,12 +64,12 @@
   left: 0;
   width: 100%;
   z-index: 11;
-  height: 44px;
-  background: #ccc;
 }
 .v-header {
   top: 0;
+  height: @headerHeight;
 }
 .v-footer {
   bottom: 0;
+  height: @footerHeight;
 }

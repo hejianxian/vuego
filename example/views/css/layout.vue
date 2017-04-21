@@ -1,13 +1,13 @@
 <template>
   <v-page header footer>
-    <v-header>Header</v-header>
+    <v-header class="custom-toolbar">Header</v-header>
     <v-content>
-      <v-block-title>title</v-block-title>
+      <v-block-title>block title</v-block-title>
       <v-content-block>
-        <p>Content</p>
+        <p>Content block</p>
       </v-content-block>
     </v-content>
-    <v-footer>Footer</v-footer>
+    <v-footer class="custom-toolbar">Footer</v-footer>
   </v-page>
 </template>
 
@@ -16,3 +16,13 @@ export default {
 
 };
 </script>
+
+<style lang="less">
+.custom-toolbar {
+  background: #ccc;
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  font-weight: bold;
+}
+</style>
