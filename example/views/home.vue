@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <template v-for="(value, type) in routers">
-      <v-el class="content-block-title">{{type}}</v-el>
+      <div class="content-block-title">{{type}}</div>
       <v-list class="menus-list">
         <li v-for="(path, name) in value">
           <router-link :to="path" class="v-item__link">
@@ -12,7 +12,6 @@
         </li>
       </v-list>
     </template>
-
   </div>
 </template>
 

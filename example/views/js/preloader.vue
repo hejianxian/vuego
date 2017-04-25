@@ -1,12 +1,12 @@
 <template>
-  <v-el class="content">
+  <div class="content">
     <div class="content-block">
       <v-button large @click.native="openDefault">Open Preloader</v-button>
     </div>
     <div class="content-block">
       <v-button large @click.native="openWithMessage" class="info">Open Preloader With Message</v-button>
     </div>
-  </v-el>
+  </div>
 </template>
 
 <script>

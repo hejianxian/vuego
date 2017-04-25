@@ -1,5 +1,5 @@
 <template>
-  <v-el class="content">
+  <div class="content">
     <div class="content-block">
       <v-row>
         <v-col col="33">
@@ -13,7 +13,7 @@
         </v-col>
       </v-row>
     </div>
-  </v-el>
+  </div>
 </template>
 
 <script>

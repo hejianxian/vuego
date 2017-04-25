@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-el class="content">
+    <div class="content">
       <div class="content-block-title">Different sizes</div>
       <div class="content-block">
         <v-row>
@@ -77,7 +77,7 @@
         </v-buttons-row>
       </div>
     </div>
-  </v-el>
+  </div>
 </template>
 
 <script>

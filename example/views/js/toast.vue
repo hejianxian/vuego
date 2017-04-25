@@ -1,9 +1,9 @@
 <template>
-  <v-el class="content">
+  <div class="content">
     <div class="content-block">
       <v-button large class="info" @click.native="open">Open Toast</v-button>
     </div>
-  </v-el>
+  </div>
 </template>
 
 <script>

@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import Switch from 'src/components/vue/switch';
 import { getRenderedText } from '../utils';
 
