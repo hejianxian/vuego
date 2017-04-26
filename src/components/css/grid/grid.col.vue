@@ -1,5 +1,5 @@
 <template>
-  <div :class="className">
+  <div :class="vColStyle">
     <slot></slot>
   </div>
 </template>
@@ -14,8 +14,8 @@ export default {
     },
   },
   computed: {
-    className() {
-      return `col-${this.col}`;
+    vColStyle() {
+      return `v-col--${this.col}`;
     },
   },
 };
