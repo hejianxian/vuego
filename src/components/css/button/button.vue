@@ -1,7 +1,7 @@
 <template>
   <button
     class="v-button"
-    :class="[btnSize, isRound, isOutline]">
+    :class="[isLarge, isSmall, isRound, isOutline]">
     <slot></slot>
   </button>
 </template>
@@ -15,14 +15,11 @@ export default {
     outline: Boolean,
   },
   computed: {
-    btnSize() {
-      if (this.large) {
-        return 'v-button--large';
-      }
-      if (this.small) {
-        return 'v-button--small';
-      }
-      return '';
+    isLarge() {
+      return this.large ? 'v-button--large' : '';
+    },
+    isSmall() {
+      return this.small ? 'v-button--small' : '';
     },
     isRound() {
       return this.round ? 'v-button--round' : '';
