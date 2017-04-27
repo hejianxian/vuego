@@ -1,12 +1,14 @@
 <template>
-  <v-el class="content">
-    <v-list>
-      <v-checkbox v-for="item in group" v-model="item.checked" :title="item.title" @input="selected"></v-checkbox>
-    </v-list>
-    <div class="content-block">
-      {{group}}
-    </div>
-  </v-el>
+  <v-page>
+    <v-content>
+      <v-list>
+        <v-checkbox v-for="item in group" v-model="item.checked" :title="item.title" @input="selected"></v-checkbox>
+      </v-list>
+      <v-content-block>
+        {{group}}
+      </v-content-block>
+    </v-content>
+  </v-page>
 </template>
 
 <script>
