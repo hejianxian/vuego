@@ -3588,6 +3588,10 @@ lodash.istypedarray@^3.0.0:
   version "3.0.6"
   resolved "http://registry.npm.taobao.org/lodash.istypedarray/download/lodash.istypedarray-3.0.6.tgz#c9a477498607501d8e8494d283b87c39281cef62"
 
+lodash.kebabcase@^4.1.1:
+  version "4.1.1"
+  resolved "http://registry.npm.taobao.org/lodash.kebabcase/download/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
+
 lodash.keys@^3.0.0:
   version "3.1.2"
   resolved "http://registry.npm.taobao.org/lodash.keys/download/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
@@ -5761,6 +5765,13 @@ vue-template-compiler@^2.1.0:
 vue-template-es2015-compiler@^1.2.2:
   version "1.5.0"
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.5.0.tgz#e4f672ab1718a3abf9171a080daefac31be117e1"
+
+vue-unit:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/vue-unit/download/vue-unit-0.1.0.tgz#f95035464667c5ca86a65553d345dcf53e5bfb89"
+  dependencies:
+    lodash.kebabcase "^4.1.1"
+    sinon "^2.1.0"
 
 vue@^2.1.0:
   version "2.1.10"

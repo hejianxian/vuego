@@ -5,7 +5,8 @@
         <v-checkbox v-for="item in group" v-model="item.checked" :title="item.title" @input="selected"></v-checkbox>
       </v-list>
       <v-content-block>
-        {{group}}
+        <p>Model: {{model}}</p>
+        <p>{{group}}</p>
       </v-content-block>
     </v-content>
   </v-page>
@@ -28,11 +29,12 @@ export default {
         value: 'Banana',
         checked: false,
       }],
+      selectedItem: null,
     };
   },
   methods: {
     selected(val) {
-      this.selectedItem = val;
+      this.model = val;
     },
   },
 };
