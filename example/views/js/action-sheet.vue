@@ -1,9 +1,11 @@
 <template>
-  <div class="content">
-    <div class="content-block">
-      <v-button class="warning" large @click.native="open">Action Sheet</v-button>
-    </div>
-  </div>
+  <v-page>
+    <v-content>
+      <v-content-block>
+        <v-button class="warning" large @click.native="open">Action Sheet</v-button>
+      </v-content-block>
+    </v-content>
+  </v-page>
 </template>
 
 <script>

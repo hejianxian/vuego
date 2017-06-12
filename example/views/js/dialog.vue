@@ -1,19 +1,15 @@
 <template>
-  <div class="content">
-    <div class="content-block">
-      <v-row>
-        <v-col col="33">
-          <v-button class="info" @click.native="showDialog">Dialog</v-button>
-        </v-col>
-        <v-col col="33">
-          <v-button class="success" @click.native="showConfirm">Confirm</v-button>
-        </v-col>
-        <v-col col="33">
-          <v-button class="warning" @click.native="showAlert">Alert</v-button>
-        </v-col>
-      </v-row>
-    </div>
-  </div>
+  <v-page>
+    <v-content>
+      <v-content-block>
+        <v-button large @click.native="showDialog">Dialog</v-button>
+        <br>
+        <v-button large class="success" @click.native="showConfirm">Confirm</v-button>
+        <br>
+        <v-button large class="warning" @click.native="showAlert">Alert</v-button>
+      </v-content-block>
+    </v-content>
+  <v-page>
 </template>
 
 <script>
