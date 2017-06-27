@@ -1,9 +1,11 @@
 <template>
-  <v-el class="content">
-    <div class="content-block">
-      <v-button large class="info" @click.native="open">Open Photo Browser</v-button>
-    </div>
-  </v-el>
+  <v-page>
+    <v-content>
+      <v-content-block>
+        <v-button large class="info" @click.native="open">Open Photo Browser</v-button>
+      </v-content-block>
+    </v-content>
+  </v-page>
 </template>
 
 <script>
