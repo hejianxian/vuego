@@ -2,7 +2,7 @@
   <v-page>
     <v-content>
       <v-content-block>
-        <v-button large class="info" @click.native="open">Open Toast</v-button>
+        <v-button large @click.native="open">Open Toast</v-button>
       </v-content-block>
     </v-content>
   <v-page>
