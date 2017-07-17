@@ -5,6 +5,7 @@
 - Components
   - Css
     - [Layout](css-comps/layout)
+    - [Colors](css-comps/colors)
     - [Buttons](css-comps/buttons)
     - [Grid](css-comps/grid)
     - [List](css-comps/list)
