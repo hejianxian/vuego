@@ -2,7 +2,9 @@
   <v-page>
     <v-content>
       <v-content-block>
-        <v-button large @click.native="open">Open Toast</v-button>
+        <v-button large @click.native="open">Default Toast</v-button>
+        <br>
+        <v-button large class='danger' @click.native="openCustomToast">Close after 4s</v-button>
       </v-content-block>
     </v-content>
   <v-page>
@@ -16,6 +18,9 @@ export default {
   methods: {
     open() {
       this.$Toast('发送成功');
+    },
+    openCustomToast() {
+      this.$Toast('4秒后关闭', 4000);
     },
   },
 };

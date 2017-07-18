@@ -8,8 +8,7 @@
         <v-switch v-model="checked" @input="switchChange"></v-switch>
         <v-switch v-model="checked" class="green"></v-switch>
         <v-switch v-model="checked" class="lightblue"></v-switch>
-        <v-switch v-model="checked" class="yellow"></v-switch>
-        <v-switch v-model="checked" class="pink"></v-switch>
+        <v-switch v-model="checked" class="red"></v-switch>
       </div>
       <div class="content-block">
         <p>Switch status: {{checked}}</p>

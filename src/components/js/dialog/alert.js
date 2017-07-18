@@ -1,14 +1,9 @@
 import $dialog from './dialog';
 
-export default function (title, message) {
+export default function ({ title, message, button = { text: '取消' } }) {
   return $dialog.create({
     title,
     message,
-    buttons: [{
-      text: 'OK',
-      action() {
-        console.log('Alert');
-      },
-    }],
+    buttons: [button],
   });
 }

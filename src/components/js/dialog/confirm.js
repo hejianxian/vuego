@@ -1,19 +1,9 @@
 import $dialog from './dialog';
 
-export default function (title, message) {
+export default function ({ title, message, buttons = [{ text: 'Cancel' }, { text: 'OK' }] }) {
   return $dialog.create({
     title,
     message,
-    buttons: [{
-      text: 'Cancel',
-      action() {
-        console.log('Cancel');
-      },
-    }, {
-      text: 'OK',
-      action() {
-        console.log('OK');
-      },
-    }],
+    buttons,
   });
 }

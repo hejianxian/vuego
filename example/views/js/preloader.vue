@@ -5,7 +5,7 @@
         <v-button large @click.native="openDefault">Open Preloader</v-button>
       </v-content-block>
       <v-content-block>
-        <v-button large @click.native="openWithMessage">Open Preloader With Message</v-button>
+        <v-button large class="warning" @click.native="openWithMessage">Open Preloader With Message</v-button>
       </v-content-block>
     </v-content>
   <v-page>

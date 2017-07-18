@@ -10,6 +10,7 @@
     - [Grid](css-comps/grid)
     - [List](css-comps/list)
   - Vue
+    - [Spinners](vue-comps/spinners)
     - [Checkbox](vue-comps/checkbox)
     - [Radio](vue-comps/radio)
     - [Switch](vue-comps/switch)

@@ -1,6 +1,6 @@
 # Pull Refresh
 
-Some info.
+[WIP]
 
 ### Basic Usage
 

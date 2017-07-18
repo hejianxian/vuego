@@ -1,6 +1,6 @@
 # Infinite Scroll
 
-Some info.
+[WIP]
 
 ### Basic Usage
 

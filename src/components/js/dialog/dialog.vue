@@ -15,18 +15,19 @@ export default {
   props: {
     title: {
       type: String,
-      default: '提示',
+      required: true,
+      default: 'Title',
     },
     message: {
       type: String,
-      default: 'No message',
+      required: true,
+      default: 'Message',
     },
     buttons: {
       type: Array,
+      required: true,
       default() {
-        return [{
-          text: '确定',
-        }];
+        return [{ text: 'Cancel' }];
       },
     },
   },
@@ -37,7 +38,7 @@ export default {
     close(action) {
       this.$refs.dialog.close();
       if (action && typeof action === 'function') {
-        action();
+        action.call(this);
       }
     },
   },

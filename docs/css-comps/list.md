@@ -1,5 +1,11 @@
 # List
-Some info.
+
+Vuego 的列表由多个组件组合而成的，包括：
+
+* `v-list` 列表的最外层容器
+* `v-item`  列表的 item 组件
+* `v-item-title` 每一项的标题组件
+* `v-item-media` 每一项的图标组件
 
 ### Basic Usage
 
@@ -39,6 +45,15 @@ Some info.
   </v-item>
 </v-list>
 ```
+
+### Attributes
+
+`v-list`组件有一个属性可设置：
+
+|参数|说明|类型|可选值|默认值|
+|----|----|----|----|----|
+|inset| 内置列表 | Boolean | —— | false |
+
 
 <v-phone hash="list"></v-phone>
 

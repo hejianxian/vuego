@@ -1,6 +1,6 @@
 # Radio
 
-Some info.
+与`v-checkbox`组件一样，为了配合移动端的交互方式，`v-radio`实际也是一组`list-item`元素。
 
 ### Basic Usage
 

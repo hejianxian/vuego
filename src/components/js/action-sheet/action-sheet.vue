@@ -15,25 +15,16 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Action Sheet',
     },
     buttons: {
       type: Array,
-      default() {
-        return [{
-          text: '相册',
-        }, {
-          text: '相机',
-        }, {
-          text: '自拍',
-        }];
-      },
+      required: true,
     },
     cancel: {
       type: Object,
       default() {
         return {
-          text: '取消',
+          text: 'Cancel',
         };
       },
     },
@@ -45,7 +36,7 @@ export default {
     close(action) {
       this.$refs.actionSheet.close();
       if (action && typeof action === 'function') {
-        action();
+        action.call(this);
       }
     },
   },
