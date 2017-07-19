@@ -11,7 +11,7 @@
         <v-button large class="warning" @click.native="showAlert">Alert</v-button>
       </v-content-block>
     </v-content>
-  <v-page>
+  </v-page>
 </template>
 
 <script>

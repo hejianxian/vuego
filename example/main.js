@@ -1,4 +1,5 @@
 import Vue from 'vue';
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 import VueRouter from 'vue-router';
 import routersConfig from './routers';
 import App from './App';

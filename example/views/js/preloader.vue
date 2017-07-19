@@ -8,7 +8,7 @@
         <v-button large class="warning" @click.native="openWithMessage">Open Preloader With Message</v-button>
       </v-content-block>
     </v-content>
-  <v-page>
+  </v-page>
 </template>
 
 <script>

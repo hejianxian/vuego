@@ -2,7 +2,12 @@
   <v-page>
     <v-content>
       <v-list>
-        <v-checkbox v-for="item in group" v-model="item.checked" :title="item.title" @input="selected"></v-checkbox>
+        <v-checkbox
+          v-for="item in group"
+          :key="item.value"
+          v-model="item.checked"
+          :title="item.title"
+          @input="selected"></v-checkbox>
       </v-list>
       <v-content-block>
         <p>Model: {{model}}</p>

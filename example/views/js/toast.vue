@@ -7,7 +7,7 @@
         <v-button large class='danger' @click.native="openCustomToast">Close after 4s</v-button>
       </v-content-block>
     </v-content>
-  <v-page>
+  </v-page>
 </template>
 
 <script>

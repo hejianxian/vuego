@@ -1,11 +1,11 @@
 {
   "name": "vuego",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mobile UI components with Vue.js 2.0",
   "author": "Hejx <531601727@qq.com>",
   "main": "dist/vuego.common.js",
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
     "dev": "node build/dev-server.js",
     "build:example": "node build/build-example.js",
     "build:vuego": "node build/build-vuego.js",
@@ -14,9 +14,8 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs",
     "docs": "cd ./docs && docsify serve"
   },
-  "dependencies": {
-    "vue": "^2.1.0",
-    "vue-router": "^2.1.1"
+  "peerDependencies": {
+    "vue": "^2.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -71,8 +70,10 @@
     "sinon": "^2.1.0",
     "sinon-chai": "^2.8.0",
     "url-loader": "^0.5.7",
+    "vue": "^2.4.1",
     "vue-html-loader": "^1.2.3",
-    "vue-loader": "^10.0.0",
+    "vue-loader": "^11.3.4",
+    "vue-router": "^2.7.0",
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.1.0",
     "vue-unit": "^0.1.0",
