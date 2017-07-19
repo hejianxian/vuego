@@ -24,4 +24,3 @@
 
 - Packages
   - [Photo Browser](packages/photo-browser)
-  - [Slider](packages/slider)

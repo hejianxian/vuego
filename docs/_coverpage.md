@@ -1,4 +1,4 @@
-![logo](_media/vuego.png)
+<img src="_media/vuego.png" alt="vuego" width="130" />
 
 # Vuego
 

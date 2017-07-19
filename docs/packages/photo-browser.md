@@ -1,12 +1,6 @@
 # Photo Browser
 
-Some info.
-
-### Basic Usage
-
-```html
-
-```
+[WIP]
 
 
 <v-phone hash="photo-browser"></v-phone>
