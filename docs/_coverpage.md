@@ -9,6 +9,6 @@
 - Optional packages
 
 [GitHub](https://github.com/hejianxian/vuego/)
-[Get Started](#quick-start)
+[Get Started](guide/installed)
 
 ![color](#fff)

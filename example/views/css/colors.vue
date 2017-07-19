@@ -23,7 +23,10 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
+  ul {
+    padding: 0;
+  }
   .color__item {
     width: 100%;
     height: 40px;
