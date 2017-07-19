@@ -1,0 +1,12 @@
+.*
+build/
+config/
+docs/
+example/
+node_modules/
+packages/
+test/
+static/
+www/
+index.html
+lerna.json

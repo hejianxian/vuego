@@ -1,6 +1,6 @@
 {
   "name": "vuego",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "Mobile UI components with Vue.js 2.0",
   "author": "Hejx <531601727@qq.com>",
   "main": "dist/vuego.common.js",

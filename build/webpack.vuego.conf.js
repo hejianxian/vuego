@@ -23,9 +23,14 @@ var webpackConfig = merge(baseWebpackConfig, {
     filename: 'vuego.common.js',
     libraryTarget: 'umd'
   },
-  externals: [{
-    'vue': false
-  }],
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs: 'vue',
+      commonjs2: 'vue',
+      amd: 'vue'
+    }
+  },
   vue: {
     loaders: utils.cssLoaders({
       sourceMap: false,
