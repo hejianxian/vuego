@@ -25,7 +25,6 @@ import Slider from './views/package/slider';
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/vuego' : '/';
 
 export default {
-  mode: 'history',
   base: BASE_PATH,
   routes: [
     { path: '/', component: Home },
