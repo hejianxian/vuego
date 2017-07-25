@@ -1,0 +1,82 @@
+.sidebar {
+  width: 240px;
+}
+.content {
+  left: 280px;
+}
+.markdown-section {
+  margin: 0;
+  max-width: 100%;
+  padding-right: 380px;
+}
+.markdown-section iframe {
+  margin: 0;
+}
+.phone{
+  width: 300px;
+  height: 100%;
+  background-color: transparent;
+  background-image: url('./phone.png');
+  background-size: 100%;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 40px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-inner{
+  width: 310px;
+  height: 540px;
+  margin-top: -10px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  transform-origin: center;
+  transform: scale(0.8, 0.8);
+}
+.phone-inner__iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* table reset */
+.markdown-section table {
+  color: #5E6D82;
+  font-size: 13px;
+  display: table;
+}
+.markdown-section table thead th {
+  background: #F8F8F8;
+  text-align: left;
+  font-weight: normal;
+  color: #2973b7;
+  height: 30px;
+}
+.markdown-section table tr {
+  border-top: 0;
+  border-bottom: 1px solid #F8F8F8;
+}
+.markdown-section table td, .markdown-section table th {
+  border: none;
+  padding: 10px 13px;
+}
+
+@media screen and (max-width: 1024px) {
+  .phone {
+    width: 0;
+    display: none;
+  }
+  .markdown-section {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .markdown-section {
+    padding-right: 15px;
+  }
+}
