@@ -6,7 +6,12 @@ import photoBrowser from '../packages/vuego-photo-browser';
 import '../packages/vuego-slider/dist/vuego-slider.less';
 import slider from '../packages/vuego-slider';
 
+// Infinite Scroll
+import '../packages/vuego-infinite-scroll/dist/vuego-infinite-scroll.less';
+import infiniteScroll from '../packages/vuego-infinite-scroll';
+
 export default {
   photoBrowser,
   slider,
+  infiniteScroll,
 };

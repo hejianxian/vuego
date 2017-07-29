@@ -14,8 +14,6 @@
     - [Checkbox](vue-comps/checkbox)
     - [Radio](vue-comps/radio)
     - [Switch](vue-comps/switch)
-    - [Pull Refresh](vue-comps/pull-refresh)
-    - [Infinite Scroll](vue-comps/infinite-scroll)
   - Js
     - [Dialog](js-comps/dialog)
     - [Action Sheet](js-comps/action-sheet)
@@ -24,3 +22,5 @@
 
 - Packages
   - [Photo Browser](packages/photo-browser)
+  - [Pull Refresh](packages/pull-refresh)
+  - [Infinite Scroll](packages/infinite-scroll)

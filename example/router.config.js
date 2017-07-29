@@ -14,8 +14,6 @@ export default {
     Spinner: '/spinner',
     Radio: '/radio',
     Checkbox: '/checkbox',
-    'Pull Refresh': '/pull-refresh',
-    'Infinite Scroll': '/infinite-scroll',
     Autocomplete: '/autocomplete',
   },
 
@@ -31,5 +29,7 @@ export default {
   packages: {
     Slider: '/slider',
     'Photo Browser': '/photo-browser',
+    'Pull Refresh': '/pull-refresh',
+    'Infinite Scroll': '/infinite-scroll',
   },
 };

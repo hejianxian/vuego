@@ -1,11 +1,14 @@
 <template>
-  <v-el class="infinite-scroll-preview">
-    <v-infinite-scroll :fetcher="loadmore">
-      <ul>
-        <li v-for="item in list">{{item.title}}</li>
-      </ul>
-    </v-infinite-scroll>
-  </v-el>
+  <v-page class="infinite-scroll-preview">
+    <v-content>
+      <v-infinite-scroll :loadmore="loadmore">
+        <ul>
+          <li v-for="item in list">{{item.title}}</li>
+        </ul>
+        <v-spinner slot="spinner" name="bars" :size="30" color="#ffcc00" />
+      </v-infinite-scroll>
+    </v-content>
+  </v-page>
 </template>
 
 <script>
