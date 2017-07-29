@@ -1,18 +1,16 @@
 import Home from './views/home';
 
-import Switch from './views/vue/switch';
-import Spinner from './views/vue/spinner';
-import Radio from './views/vue/radio';
-import Checkbox from './views/vue/checkbox';
-import PullRefresh from './views/vue/pull-refresh';
-import InfiniteScroll from './views/vue/infinite-scroll';
-import Autocomplete from './views/vue/autocomplete';
-
 import Layout from './views/css/layout';
 import Colors from './views/css/colors';
 import Button from './views/css/button';
 import Grid from './views/css/grid';
 import List from './views/css/list';
+
+import Switch from './views/vue/switch';
+import Spinner from './views/vue/spinner';
+import Radio from './views/vue/radio';
+import Checkbox from './views/vue/checkbox';
+import Autocomplete from './views/vue/autocomplete';
 
 import Dialog from './views/js/dialog';
 import ActionSheet from './views/js/action-sheet';
@@ -21,6 +19,8 @@ import Preloader from './views/js/preloader';
 
 import PhotoBrowser from './views/package/photo-browser';
 import Slider from './views/package/slider';
+import PullRefresh from './views/package/pull-refresh';
+import InfiniteScroll from './views/package/infinite-scroll';
 
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/vuego' : '/';
 
@@ -32,8 +32,6 @@ export default {
     { path: '/spinner', component: Spinner },
     { path: '/radio', component: Radio },
     { path: '/checkbox', component: Checkbox },
-    { path: '/pull-refresh', component: PullRefresh },
-    { path: '/infinite-scroll', component: InfiniteScroll },
     { path: '/slider', component: Slider },
     { path: '/autocomplete', component: Autocomplete },
     { path: '/grid', component: Grid },
@@ -46,6 +44,8 @@ export default {
     { path: '/toast', component: Toast },
     { path: '/preloader', component: Preloader },
     { path: '/photo-browser', component: PhotoBrowser },
+    { path: '/pull-refresh', component: PullRefresh },
+    { path: '/infinite-scroll', component: InfiniteScroll },
     { path: '*', redirect: '/' },
   ],
 };
