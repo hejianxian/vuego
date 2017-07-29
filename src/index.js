@@ -28,7 +28,6 @@ import Preloader from './components/vue/preloader';
 import Radio from './components/vue/radio';
 import Checkbox from './components/vue/checkbox';
 import PullRefresh from './components/vue/pull-refresh';
-import InfiniteScroll from './components/vue/infinite-scroll';
 import Autocomplete from './components/vue/autocomplete';
 
 // js components
@@ -74,7 +73,6 @@ export default {
     Vue.component(Radio.name, Radio);
     Vue.component(Checkbox.name, Checkbox);
     Vue.component(PullRefresh.name, PullRefresh);
-    Vue.component(InfiniteScroll.name, InfiniteScroll);
     Vue.component(Autocomplete.name, Autocomplete);
 
     // js

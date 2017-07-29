@@ -1,9 +1,9 @@
 {
   "name": "vuego-infinite-scroll",
-  "version": "0.0.0",
+  "version": "0.1.3",
   "description": "A infinite scroll package of Vuego.",
-  "jsnext": "dist/bundle.js",
-  "main": "dist/bundle.common.js",
+  "jsnext": "dist/vuego-infinite-scroll.js",
+  "main": "dist/vuego-infinite-scroll.common.js",
   "directories": {
     "test": "test"
   },

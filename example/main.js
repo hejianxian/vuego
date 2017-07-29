@@ -12,6 +12,7 @@ Vue.use(Vuego);
 // install packages
 Vue.use(packages.photoBrowser);
 Vue.use(packages.slider);
+Vue.use(packages.infiniteScroll);
 
 const router = new VueRouter(routersConfig);
 
